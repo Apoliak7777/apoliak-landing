@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Startup — Landing | Apoliak Sites</title>
+  <meta name="description" content="Startup B — Konverzná landing stránka v tmavom štýle s animovanými zelenými akcentmi. Jasné CTA, rýchly funnel a lead capture." />
+  <meta property="og:title" content="Startup B — Landing | Apoliak Sites" />
+  <meta property="og:description" content="Konverzná landing stránka v tmavom štýle s animovanými zelenými akcentmi. Jasné CTA, rýchly funnel a lead capture." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="g-land" x1="0" x2="1">
+              <stop offset="0" stop-color="#00ff88"/>
+              <stop offset="1" stop-color="#00cc66"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="84" height="84" rx="12" fill="none" stroke="url(#g-land)" stroke-width="6"/>
+          <path d="M30 68 L44 32 L70 68 Z" fill="url(#g-land)" opacity="0.95"></path>
+        </svg>
+        <div class="brand-text">
+          <h1>Startup</h1>
+          <p class="tagline">Landing, ktorý konvertuje.</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#benefits">Výhody</a>
+        <a href="#how">Ako funguje</a>
+        <a href="#pricing">Cenník</a>
+        <a href="#contact" class="btn-outline">Kontakt</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Odomknúť menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero landing-hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2 class="headline">Získajte viac zákazníkov s landingom, ktorý predáva.</h2>
+          <p class="lead">Rýchly funnel, jasné CTA a presvedčivé dôkazy — navrhnuté tak, aby návštevník konvertoval na lead alebo zákazku.</p>
+
+          <form id="lead-form" class="lead-form" aria-label="Lead capture formulár">
+            <label class="field">
+              <span>Meno</span>
+              <input type="text" name="name" placeholder="Tvoje meno" required>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="email@firma.sk" required>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="cta-primary">Chcem demo</button>
+              <button type="button" class="btn btn-ghost" id="cta-lite">Viac info</button>
+            </div>
+            <p class="form-note">Bez záväzkov — odpíšem do 24 hodín.</p>
+            <div id="lead-msg" role="status" aria-live="polite"></div>
+          </form>
+
+          <ul class="mini-features">
+            <li>Optimalizované pre konverzie</li>
+            <li>Rýchle načítanie a SEO</li>
+            <li>Jednoduchý funnel — lead → call → sale</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="device-mockup">
+            <div class="screen neon">
+              <svg viewBox="0 0 600 350" class="anim-bg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="lg-land" x1="0" x2="1">
+                    <stop offset="0" stop-color="#00ff94"/>
+                    <stop offset="1" stop-color="#00cc66"/>
+                  </linearGradient>
+                </defs>
+                <rect x="10" y="10" rx="20" width="580" height="330" fill="rgba(0,0,0,0.25)"/>
+                <g class="wave">
+                  <path d="M0 220 C150 120 450 320 600 220 L600 350 L0 350 Z" fill="url(#lg-land)" opacity="0.12"/>
+                </g>
+              </svg>
+
+              <div class="mock-content">
+                <h3 id="typewriter">Landing pre rýchly rast</h3>
+                <div class="funnel-steps">
+                  <div class="step"><strong>1</strong><span>Visit</span></div>
+                  <div class="arrow">→</div>
+                  <div class="step"><strong>2</strong><span>Lead</span></div>
+                  <div class="arrow">→</div>
+                  <div class="step"><strong>3</strong><span>Call</span></div>
+                  <div class="arrow">→</div>
+                  <div class="step"><strong>4</strong><span>Sale</span></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="benefits" class="section benefits">
+      <div class="container">
+        <h2 class="section-title">Prečo tento landing funguje</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Cieľovo orientovaný</h3>
+            <p>Jasné CTA a funnel vedú používateľa k rozhodnutiu bez rozptyľovania.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Rýchlosť & výkon</h3>
+            <p>Optimalizované pre rýchle načítanie a lepšie míery konverzie.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🧩</div>
+            <h3>Modulárne prvky</h3>
+            <p>Jednoduché A/B testovanie hero, CTA a proof sekcií.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section how">
+      <div class="container">
+        <h2 class="section-title">Rýchly funnel</h2>
+        <ol class="funnel-list">
+          <li><strong>Traffic</strong> – zacielená reklama alebo SEO.</li>
+          <li><strong>Hero</strong> – jedno silné CTA + lead form.</li>
+          <li><strong>Lead Nurture</strong> – e-mail + krátky call.</li>
+          <li><strong>Closing</strong> – demo/ponuka a finalizácia.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2 class="section-title">Cenník (orientačne)</h2>
+        <div class="pricing-grid">
+          <div class="plan">
+            <h3>Landing Basic</h3>
+            <p class="price">250 €</p>
+            <ul>
+              <li>Jednostránkový landing</li>
+              <li>Lead form + e-mail notifikácia</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Vyžiadať</a>
+          </div>
+
+          <div class="plan featured">
+            <h3>Landing Pro</h3>
+            <p class="price">450 €</p>
+            <ul>
+              <li>A/B varianty</li>
+              <li>Analytika & eventy</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Vyžiadať</a>
+          </div>
+
+          <div class="plan">
+            <h3>Funnel Pack</h3>
+            <p class="price">od 900 €</p>
+            <ul>
+              <li>Landing + e-mail sequence</li>
+              <li>Reporting + optimalizácie</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Dohodnúť</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Čo hovoria klienti</h2>
+        <div class="test-grid">
+          <blockquote class="test">
+            „Landing od Apoliaka nám zdvojnásobil leady za mesiac.“<cite>— Mário, CEO</cite>
+          </blockquote>
+          <blockquote class="test">
+            „Rýchla implementácia a výsledky hneď po launchi.“<cite>— Petra, marketing</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Kontakt — dohodnime termín</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" aria-label="Kontaktný formulár">
+            <label>
+              Meno
+              <input type="text" name="name" required placeholder="Tvoje meno">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="email@priklad.sk">
+            </label>
+            <label>
+              Správa
+              <textarea name="message" rows="4" placeholder="Krátky popis projektu"></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Odoslať dopyt</button>
+            </div>
+            <div id="form-msg" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact-info">
+            <h3>Rýchle info</h3>
+            <p>Preferuješ Whatsapp, email alebo video meeting? Napíš a dohodneme všetko.</p>
+            <ul class="contact-list">
+              <li><strong>Apoliak Sites</strong></li>
+              <li>Email: <a href="mailto:apoliak@example.com">apoliak@example.com</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Startup B — Vytvoríme landing, ktorý predáva.</p>
+      <nav class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
